@@ -37,8 +37,9 @@ function Hero() {
       </motion.p>
 
       <motion.a
-        href="/arun_resume.pdf"
-        download
+        href="https://drive.google.com/uc?export=download&id=16bLKcH0Ra97mOU_z-6wI2lrg11hgEUmF"
+        target="_blank"
+        rel="noopener noreferrer"
         className="mt-6 bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg transition"
         whileHover={{ scale: 1.05 }}
       >
