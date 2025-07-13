@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
+import Experience from "./components/Experience";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -43,6 +44,7 @@ function App() {
         {/* 📄 Main Content */}
         <Hero />
         <About />
+        <Experience />
         <Projects />
         <Contact />
         <Footer />
