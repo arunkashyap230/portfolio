@@ -3,6 +3,20 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "Personal Finance Tracker+",
+    description:
+      "A full-stack finance management app where users can track expenses, set budgets, and view visual spending reports. Includes Python-based smart suggestions using Pandas.",
+    features: [
+      "User login with personalized dashboards",
+      "Add/edit/delete expenses with filters and search",
+      "Set category-wise budgets with alerts",
+      "Dashboard with pie and line charts (Chart.js)",
+      "Python service to generate AI-powered tips on spending behavior",
+    ],
+    tech: ["React", "Node.js", "MongoDB", "Flask", "Pandas", "Chart.js"],
+    link: "https://github.com/arunkashyap230/PersonalFinanceTracker",
+  },
+  {
     title: "Online Printer eKart",
     description: "E-commerce platform for printers built with MERN Stack.",
     link: "https://github.com/arunkashyap230",

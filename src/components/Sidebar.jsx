@@ -1,17 +1,9 @@
-import React, { useEffect } from "react";
+// Sidebar.jsx
+import React from "react";
 import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Sidebar({ isOpen }) {
-  useEffect(() => {
-    if (isOpen) {
-      const audio = new Audio(
-        "https://www.soundjay.com/buttons/sounds/button-29.mp3"
-      );
-      audio.play();
-    }
-  }, [isOpen]);
-
   return (
     <AnimatePresence>
       {isOpen && (
