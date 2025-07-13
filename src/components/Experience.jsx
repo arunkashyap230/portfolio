@@ -43,7 +43,7 @@ function Experience() {
   return (
     <motion.section
       id="experience"
-      className="py-20 px-6 bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 text-white"
+      className="py-20 px-6 bg-black text-white"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -53,19 +53,20 @@ function Experience() {
         Experience
       </h2>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        {experiences.map((exp, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 200 }}
-            className="bg-gray-800/70 backdrop-blur-sm border border-pink-500/20 rounded-2xl p-6 shadow-lg hover:shadow-pink-500/40 transition"
-          >
-            <h3 className="text-2xl font-bold text-white mb-1">{exp.title}</h3>
-            <p className="text-pink-400 font-semibold">{exp.company}</p>
-            <p className="text-gray-400 text-sm mb-3">{exp.duration}</p>
-            <p className="text-gray-300">{exp.description}</p>
-          </motion.div>
+      <div className="relative border-l-4 border-pink-500 max-w-3xl mx-auto pl-6 space-y-10">
+        {experiences.map((exp, i) => (
+          <div key={i} className="relative">
+            <span className="absolute left-[-11px] top-2 w-5 h-5 rounded-full bg-pink-500 border-4 border-black"></span>
+            <div className="bg-white/10 backdrop-blur-lg p-5 rounded-xl shadow hover:shadow-pink-500/40 transition">
+              <h3 className="text-xl font-semibold text-pink-300">
+                {exp.title}
+              </h3>
+              <p className="text-sm text-gray-300">
+                {exp.company} • {exp.duration}
+              </p>
+              <p className="mt-2 text-gray-200">{exp.description}</p>
+            </div>
+          </div>
         ))}
       </div>
     </motion.section>
