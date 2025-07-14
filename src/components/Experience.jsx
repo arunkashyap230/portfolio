@@ -1,3 +1,4 @@
+// Experience.jsx
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -43,30 +44,37 @@ function Experience() {
   return (
     <motion.section
       id="experience"
-      className="py-20 px-6 bg-black text-white"
+      className="py-20 px-6 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-4xl font-bold text-center text-pink-400 mb-12">
+      <h2 className="text-4xl font-bold text-center text-pink-400 mb-16">
         Experience
       </h2>
 
-      <div className="relative border-l-4 border-pink-500 max-w-3xl mx-auto pl-6 space-y-10">
+      <div className="relative border-l-4 border-pink-500 max-w-3xl mx-auto pl-8 space-y-12">
         {experiences.map((exp, i) => (
-          <div key={i} className="relative">
-            <span className="absolute left-[-11px] top-2 w-5 h-5 rounded-full bg-pink-500 border-4 border-black"></span>
-            <div className="bg-white/10 backdrop-blur-lg p-5 rounded-xl shadow hover:shadow-pink-500/40 transition">
-              <h3 className="text-xl font-semibold text-pink-300">
+          <motion.div
+            key={i}
+            className="relative group"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: i * 0.1 }}
+            viewport={{ once: true }}
+          >
+            <span className="absolute -left-3 top-2 w-6 h-6 rounded-full bg-pink-500 border-4 border-black group-hover:scale-110 transition-transform"></span>
+            <div className="bg-white/10 backdrop-blur-xl rounded-2xl shadow-lg border border-pink-500/30 p-6 hover:shadow-pink-500/40 transition">
+              <h3 className="text-2xl font-semibold text-pink-300 mb-1">
                 {exp.title}
               </h3>
-              <p className="text-sm text-gray-300">
+              <p className="text-gray-300 text-sm font-medium mb-1">
                 {exp.company} • {exp.duration}
               </p>
-              <p className="mt-2 text-gray-200">{exp.description}</p>
+              <p className="text-gray-200 text-sm">{exp.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </motion.section>

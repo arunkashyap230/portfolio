@@ -9,7 +9,7 @@ import Sidebar from "./components/Sidebar";
 import Experience from "./components/Experience";
 
 function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true); // 🌙 Dark Mode
 
   return (
