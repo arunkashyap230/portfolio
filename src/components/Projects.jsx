@@ -15,7 +15,7 @@ const projects = [
       "Python service to generate AI-powered tips on spending behavior",
     ],
     tech: ["React", "Node.js", "MongoDB", "Flask", "Pandas", "Chart.js"],
-    link: "https://github.com/arunkashyap230/PersonalFinanceTracker",
+    link: "https://financetrackerper.netlify.app/",
     github: "https://github.com/arunkashyap230/PersonalFinanceTracker",
   },
   {
