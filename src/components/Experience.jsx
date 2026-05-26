@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     title: "Associate Software Engineer",
-    company: "Priacc Innovation Pvt Ltm",
+    company: "Priacc Innovation Pvt Ltd",
     duration: "Oct 2025 – Feb 2026",
     description:
       "Working on TeamHub – an ERP-based Employee Attendance and Management System using MERN stack",
