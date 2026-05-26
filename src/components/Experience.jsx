@@ -4,19 +4,20 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    title: "Associate Software Engineer",
+    company: "Priacc Innovation Pvt Ltm",
+    duration: "Oct 2025 – Feb 2026",
+    description:
+      "Working on TeamHub – an ERP-based Employee Attendance and Management System using MERN stack",
+  },
+  {
     title: "Software Developer",
     company: "Raghunandan Money Pvt Ltd",
     duration: "Dec 2024 – Present",
     description:
       "Developing and maintaining web applications using MERN stack technologies for financial services.",
   },
-  {
-    title: "Web Developer",
-    company: "RRP Traders",
-    duration: "Jul 2024 – Sep 2024",
-    description:
-      "Built and maintained a full-stack e-commerce site for printer sales with admin panel.",
-  },
+
   {
     title: "Full Stack Web Development Intern",
     company: "Career Compiler",
@@ -24,13 +25,7 @@ const experiences = [
     description:
       "Implemented a CRUD App project using MERN Stack during internship.",
   },
-  {
-    title: "Web Developer Intern",
-    company: "Bharat Intern",
-    duration: "2023",
-    description:
-      "Built Temperature Converter App and Netflix Landing Page clone.",
-  },
+
   {
     title: "Full Stack Intern",
     company: "PREGRAD",

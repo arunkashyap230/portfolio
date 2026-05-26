@@ -4,6 +4,21 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+    title: "TeamHub – ERP Attendance & Management System",
+    description:
+      "A full-stack ERP-based employee attendance and management system developed using the MERN stack. The application helps organizations manage employees, attendance tracking, and role-based access efficiently.",
+    features: [
+      "Secure authentication and role-based access control",
+      "Employee attendance tracking and management",
+      "Admin dashboard for employee monitoring",
+      "CRUD operations for employee data management",
+      "RESTful APIs with MongoDB database integration",
+    ],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+    link: "https://empteamhub.netlify.app/",
+    github: "https://github.com/arunkashyap230/Teamhub",
+  },
+  {
     title: "Personal Finance Tracker+",
     description:
       "A full-stack finance management app where users can track expenses, set budgets, and view visual spending reports. Includes Python-based smart suggestions using Pandas.",
@@ -18,6 +33,23 @@ const projects = [
     link: "https://financetrackerper.netlify.app/",
     github: "https://github.com/arunkashyap230/PersonalFinanceTracker",
   },
+
+  {
+    title: "E-Commerce Platform",
+    description:
+      "A full-stack e-commerce web application developed using the MERN stack with features like product management, authentication, cart system, order handling, and role-based admin controls.",
+    features: [
+      "User authentication and role-based access control",
+      "Product listing, search, filter, and category management",
+      "Shopping cart and order management system",
+      "Admin panel for managing products, users, and orders",
+      "Responsive UI with secure REST API integration",
+    ],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+    link: "https://jobaajecommerce.netlify.app/",
+    github: "https://github.com/arunkashyap230/jobaaj_Ecommerce_website",
+  },
+
   {
     title: "Online Printer eKart",
     description: "E-commerce platform for printers built with MERN Stack.",
