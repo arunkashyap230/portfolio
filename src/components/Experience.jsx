@@ -13,7 +13,7 @@ const experiences = [
   {
     title: "Software Developer",
     company: "Raghunandan Money Pvt Ltd",
-    duration: "Dec 2024 – Present",
+    duration: "Dec 2024 – June 2025",
     description:
       "Developing and maintaining web applications using MERN stack technologies for financial services.",
   },
